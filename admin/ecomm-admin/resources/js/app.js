@@ -1,2 +1,2 @@
-import './bootstrap';
-import './react-bootstrap';
+import 'bootstrap';
+import 'react-bootstrap';
