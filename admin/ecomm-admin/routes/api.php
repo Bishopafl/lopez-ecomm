@@ -19,4 +19,4 @@ use App\Http\Controllers\Admin\VisitorController;
 //     return $request->user();
 // });
 
-Route::get('/getvisitor', [VisitorController::class, 'GetVisitorDetails']);
+Route::get('/getVisitor', [VisitorController::class, 'GetVisitorDetails']);
