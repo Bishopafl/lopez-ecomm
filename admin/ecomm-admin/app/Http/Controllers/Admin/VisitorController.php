@@ -17,7 +17,7 @@ class VisitorController extends Controller
         $now        = Carbon::now();
         $ip_address = $_SERVER['REMOTE_ADDR'];
         $visit_time = $now->format( 'h:i:sa');
-        $visit_date = $now->format('d-m-Y');
+        $visit_date = $now->format('m-d-Y');
 
         $result = Visitor::insert([
             'ip_address' => $ip_address,
