@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\SiteInfoController;
 use Illuminate\Http\Request;
@@ -21,11 +22,10 @@ use App\Http\Controllers\Admin\VisitorController;
 //     return $request->user();
 // });
 
-// Get Visitor
-Route::get('/getVisitor', [VisitorController::class, 'GetVisitorDetails']);
+Route::get('/getVisitor', [VisitorController::class, 'GetVisitorDetails']); // Get Visitor Details Route
 
-// Contact Page Route
-Route::post('/contactDetails', [ContactController::class, 'ContactPageDetails']);
+Route::post('/contactDetails', [ContactController::class, 'ContactPageDetails']); // Contact Page Route
 
-// Site Info Route
-Route::get('/allsiteinfo', [SiteInfoController::class, 'AllSiteInfo']);
+Route::get('/allsiteinfo', [SiteInfoController::class, 'AllSiteInfo']); // Site Info Route
+
+Route::get('/allcategorydata', [CategoryController::class, 'AllCategory']); // Category Route
