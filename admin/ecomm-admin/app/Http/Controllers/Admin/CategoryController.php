@@ -25,8 +25,6 @@ class CategoryController extends Controller
             array_push( $categoryDetailsArray ,$category_item);
         }
 
-
-
         return $categoryDetailsArray;
     }
 }
