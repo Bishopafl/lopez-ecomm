@@ -12,7 +12,7 @@ class ProductListController extends Controller
     public function ProductListByRemark(Request $request){
         try {
             $remark = $request->remark;
-            $product_list = ProductList::where('remark', $remark)->get();
+            $product_list = ProductList::where('remark', $remark)->limit(8)->get();
             return $product_list;
         } catch (\Throwable $th) {
             throw new Exception('Error Processing Product List by Remark Request', 1);
